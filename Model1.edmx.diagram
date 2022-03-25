@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5c5a145856b5441dbe4acbfd4834b4b8" Name="Diagram1">
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.CHITIETHOADON" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.CHITIETPHIEUTHUE" Width="1.5" PointX="7.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.HOADON" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.KHACHHANG" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.LOAIKHACH" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.LOAIPHONG" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.NGUOIDUNG" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.PHIEUTHUE" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.PHONG" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLIKHACHSANModel.THAMSO" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__CHITIETHO__MAHOA__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__CHITIETHO__MAPHI__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__CHITIETHO__MAPHO__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__CHITIETPH__MAKHA__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__CHITIETPH__MAPHI__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__HOADON__MAKHACHH__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__KHACHHANG__MALOA__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__PHONG__MALOAIPHO__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLIKHACHSANModel.FK__PHIEUTHUE__MAPHO__440B1D61" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

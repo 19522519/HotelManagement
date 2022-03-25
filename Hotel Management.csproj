@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC28D1EA-FA08-40D6-9A77-954ED5589E60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Management</RootNamespace>
+    <AssemblyName>Hotel Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hotel.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHITIETHOADON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIETPHIEUTHUE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\BillController.cs" />
+    <Compile Include="Controller\CustomerController.cs" />
+    <Compile Include="Controller\CustomerTypeController.cs" />
+    <Compile Include="Controller\ParameterController.cs" />
+    <Compile Include="Controller\RentalController.cs" />
+    <Compile Include="Controller\RoomController.cs" />
+    <Compile Include="Controller\RoomTypeController.cs" />
+    <Compile Include="Controller\UserController.cs" />
+    <Compile Include="DangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKi.Designer.cs">
+      <DependentUpon>DangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBillManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBillManagement.Designer.cs">
+      <DependentUpon>fBillManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBookRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookRoom.Designer.cs">
+      <DependentUpon>fBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCustomerManagement.Designer.cs">
+      <DependentUpon>fCustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMainMenu.Designer.cs">
+      <DependentUpon>fMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fManageStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fManageStaff.Designer.cs">
+      <DependentUpon>fManageStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fParameterUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fParameterUpdate.Designer.cs">
+      <DependentUpon>fParameterUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanLyPhieuThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanLyPhieuThue.Designer.cs">
+      <DependentUpon>fQuanLyPhieuThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOADON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHoaDon.Designer.cs">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KHACHHANG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAIKHACH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAIPHONG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRoomType.Designer.cs">
+      <DependentUpon>ManageRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageCustomerType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageCustomerType.Designer.cs">
+      <DependentUpon>ManageCustomerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NGUOIDUNG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersionalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersionalInformation.Designer.cs">
+      <DependentUpon>PersionalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHIEUTHUE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHONG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomManagement.Designer.cs">
+      <DependentUpon>RoomManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THAMSO.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DangKi.resx">
+      <DependentUpon>DangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBillManagement.resx">
+      <DependentUpon>fBillManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookRoom.resx">
+      <DependentUpon>fBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCustomerManagement.resx">
+      <DependentUpon>fCustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMainMenu.resx">
+      <DependentUpon>fMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fManageStaff.resx">
+      <DependentUpon>fManageStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fParameterUpdate.resx">
+      <DependentUpon>fParameterUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanLyPhieuThue.resx">
+      <DependentUpon>fQuanLyPhieuThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHoaDon.resx">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoomType.resx">
+      <DependentUpon>ManageRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCustomerType.resx">
+      <DependentUpon>ManageCustomerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersionalInformation.resx">
+      <DependentUpon>PersionalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomManagement.resx">
+      <DependentUpon>RoomManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\introduction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_mainmenu_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opacity_background_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opacity_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hotel.ico" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="QuanLiKhachSan.sql" />
+    <Content Include="Resources\hidepw.png" />
+    <Content Include="Resources\showpw.png" />
+    <None Include="Resources\Show 16px.png" />
+    <None Include="Resources\Hide.png" />
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
